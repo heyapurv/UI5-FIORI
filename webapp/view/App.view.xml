@@ -1,0 +1,12 @@
+<mvc:View 
+  controllerName="ui5.walkthrough.controller.App"
+  xmlns="sap.m"
+  xmlns:mvc="sap.ui.core.mvc">
+  <Text text="Text control from xml view"/>
+  <Button 
+     text="{dataModel>/name}"
+     press=".onShowHello"
+   />
+
+
+</mvc:View>
