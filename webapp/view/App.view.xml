@@ -10,11 +10,13 @@
     <Page title="{i18n>homePageTitle}">
      <content>
         <mvc:XMLView viewName="ui5.walkthrough.view.helloPanel" />
+        <mvc:XMLView viewName="ui5.walkthrough.view.InvoiceList" />
+
      </content>
     </Page>
    </pages>
    </App>
-
+ 
   </Shell>
 
 

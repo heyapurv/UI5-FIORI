@@ -6,8 +6,10 @@
   
     <Panel  headerText="{i18n>helloPanelTitle}">
        <content>
+           <Button class="sapUiSmallMarginEnd" id="helloDialogButton" text="{i18n>openDialogButtonText}" press=".onOpenDialog"></Button>
            <Button class="myCustomButton"  text="{i18n>showHelloButtonText}" press=".onShowHello"></Button>
-           <Input class="sapUiSmallMarginBegin" value="{/recipient/name}" description="Hello {/recipient/name}" valueLiveUpdate="true" width="60%"></Input>
+           <Input class="sapUiSmallMarginBegin" value="{/recipient/name}" description="Hello" valueLiveUpdate="true" width="60%"></Input>
+           <FormattedText htmlText="Hello " class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"/>
        </content>
     </Panel>
 

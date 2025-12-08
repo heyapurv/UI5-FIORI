@@ -11,6 +11,15 @@ sap.ui.define([
 
     onShowHello: function () {
       MessageToast.show("hello world from message toast");
+    },
+    async onOpenDialog() {
+      this.oDialog ??= await this.loadFragment({
+        name: "ui5.walkthrough.view.HelloDialog"
+      })
+      this.oDialog.open()
+    },
+    onCloseDialog(){
+      this.byId("helloDialog").close()
     }
   });
 });
